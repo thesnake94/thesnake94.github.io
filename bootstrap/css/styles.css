@@ -11515,6 +11515,22 @@ html {
   cursor: pointer;
 }
 
+
+.btn_retour2 {
+  scroll-behavior: smooth;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  display: flex;
+  background: lightblue;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 40px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
 .icone {
   width: 50px;
 }
