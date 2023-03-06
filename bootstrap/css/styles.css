@@ -1,3 +1,11 @@
+header{
+  background-image: url('/bootstrap/assets/img/bg_earth_AdobeExpress.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @charset "UTF-8";
 
 :root {
