@@ -11442,6 +11442,12 @@ html {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: lightblue;
+  filter: drop-shadow(0 0 0.75rem azure); 
+  color: transparent;
+  transition: all 0.5s;
 }
 
 @media (min-width: 992px) {
@@ -11544,9 +11550,3 @@ html {
   width: 50px;
 }
 
-
-
-/* .bg-image{
-  background-image: url(/assets/img/portfolio/boucle\ boucle.gif);
-  background-size: 100%;
-} */
