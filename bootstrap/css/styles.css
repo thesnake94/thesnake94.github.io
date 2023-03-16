@@ -3123,12 +3123,10 @@ textarea.form-control-lg {
 .btn-info {
   color: #000;
   background-color: #0dcaf0;
-  border-color: #0dcaf0;
 }
 .btn-info:hover {
   color: #000;
   background-color: #31d2f2;
-  border-color: #25cff2;
 }
 .btn-check:focus + .btn-info, .btn-info:focus {
   color: #000;
@@ -11554,4 +11552,14 @@ html {
 .icone {
   width: 50px;
 }
+
+
+/* navbar qui se réduit */
+nav {
+  transition: all 0.3s ease;
+}
+.sticky {
+  height: 71px;
+}
+
 
