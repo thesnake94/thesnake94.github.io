@@ -1,5 +1,5 @@
 header{
-  background-image: url('/bootstrap/assets/img/bg_earth_AdobeExpress.gif');
+  background-image: url('/bootstrap/assets/img/background\ bulle.gif');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -83,9 +83,14 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /* background-color: var(--bs-body-bg); */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: url('/bootstrap/assets/img/background\ bulle.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 hr {

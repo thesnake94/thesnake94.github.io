@@ -98,10 +98,12 @@ h1{
 
 /*body*/
 body {
-  background-image: url(/IMG/background\ bulle.gif);
+  background-image: url('/IMG/background\ bulle.gif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
+
 }
 
 
