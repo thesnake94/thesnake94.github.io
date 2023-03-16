@@ -11563,3 +11563,75 @@ nav {
 }
 
 
+/*contact*/
+.btnC {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.btnC {
+  border-radius: 20px;
+	width: 280px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: blue;
+	background-image: linear-gradient(315deg, azure 10%, rgb(0, 116, 155) 54%);
+	background-size: 200% 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+	transition: 500ms;
+}
+
+.btnC:before {
+  border-radius: 10px;
+	color: rgba(255, 255, 255, 0.703);
+	font-size: 16px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 40px;
+	background-color: blue;
+  background-image: linear-gradient(315deg, azure 10%, rgb(0, 116, 155) 54%);
+	transition: 500ms;
+}
+
+.btnC:hover {
+	background-position: right;
+}
+
+.btnC:hover:before {
+	color: rgba(255, 255, 255, 0.849);
+}
+
+.btnC:focus {
+	outline: none;
+}
+
+
+
+.btn_github {
+  color:azure;
+}
+
+.logo_github{
+  height: 60%;
+}
+
+.btn_linkedin{
+  color: azure;
+}
+
+.logo_linkedin{
+  height: 60%;
+}
