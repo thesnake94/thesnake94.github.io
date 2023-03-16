@@ -11620,12 +11620,18 @@ nav {
 
 
 
-
 .logo_social{
   height: 80%;
 }
 
-.btn_mail{
-  color: white;
+.btn_mail {
+  color: transparent; /* rend le texte initiallement invisible */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* ajoute un flou */
 }
+
+.btn_mail:hover {
+  color: blue; /* rend le texte bleu au survol */
+  text-shadow: none; /* supprime le flou au survol */
+}
+
 
