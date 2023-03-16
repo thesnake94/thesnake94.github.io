@@ -1,3 +1,4 @@
+// navbar qui bouge
 window.onscroll = function () {
 	if (window.innerWidth > 991) {
 		if (window.pageYOffset > 100) {
