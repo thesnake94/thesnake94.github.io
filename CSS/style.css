@@ -97,13 +97,15 @@ h1{
 
 
 /*body*/
-body{
-  background-color: black;
+body {
+  background-image: url(/IMG/background\ bulle.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-header {
-    width: 100%;
-  }
+
+
   
 #modal {
   border-radius: 50%;
