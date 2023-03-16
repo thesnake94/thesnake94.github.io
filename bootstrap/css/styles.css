@@ -11611,7 +11611,7 @@ nav {
 }
 
 .btnC:hover:before {
-	color: rgba(255, 255, 255, 0.849);
+	color: rgba(255, 255, 255);
 }
 
 .btnC:focus {
@@ -11620,18 +11620,12 @@ nav {
 
 
 
-.btn_github {
-  color:azure;
+
+.logo_social{
+  height: 80%;
 }
 
-.logo_github{
-  height: 60%;
+.btn_mail{
+  color: white;
 }
 
-.btn_linkedin{
-  color: azure;
-}
-
-.logo_linkedin{
-  height: 60%;
-}
