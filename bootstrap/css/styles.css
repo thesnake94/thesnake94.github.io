@@ -2699,6 +2699,14 @@ nav {
     border-radius: 500px 0 0 500px;
   }
 }
+.container-time {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.container-time.visible {
+  opacity: 1;
+}
 
 
 /* responsive timeline */
