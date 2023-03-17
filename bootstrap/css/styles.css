@@ -11553,6 +11553,8 @@ html {
 
 
 
+
+
 /* navbar qui se réduit */
 nav {
   transition: all 0.3s ease;
@@ -11560,6 +11562,8 @@ nav {
 .sticky {
   height: 71px;
 }
+
+
 
 
 /*contact*/
