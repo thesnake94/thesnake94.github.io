@@ -996,7 +996,15 @@ button:not(:disabled),
 }
 
 
-
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .btn-outline-light {
