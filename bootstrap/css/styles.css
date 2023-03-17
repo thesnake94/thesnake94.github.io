@@ -2490,3 +2490,256 @@ nav {
 
 
 
+
+
+/* timeline */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container-time {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container-time.left {
+  left: 0;
+}
+
+.container-time.right {
+  left: 50%;
+}
+
+.container-time::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: blue;
+  border: 2px solid yellow;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container-time.right::after {
+  left: -8px;
+}
+
+.container-time::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: yellow;
+  z-index: 1;
+}
+
+.container-time.right::before {
+  left: 8px;
+}
+
+.container-time .date, .date1, .date2, .date3 {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b5ef06;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container-time.left .date {
+  right: -75px;
+}
+.container-time.left .date1 {
+  right: -105px;
+}
+.container-time.left .date2 {
+  right: -90px;
+}
+.container-time.left .date3 {
+  right: -135px;
+}
+
+
+
+.container-time.right .date {
+  left: -75px;
+}
+.container-time.right .date1 {
+  left: -105px;
+}
+.container-time.right .date2 {
+  left: -90px;
+}
+.container-time.right .date3 {
+  left: -120px;
+}
+
+.container-time .icon {
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 5px 0;
+  top: calc(50% - 20px);
+  background: #00000000;
+  text-align: center;
+  font-size: 18px;
+  color: blue;
+  z-index: 1;
+}
+
+.container-time.left .icon {
+  right: 63px;
+}
+
+.container-time.right .icon {
+  left: 63px;
+}
+
+.container-time .content {
+  padding: 30px 90px 30px 30px;
+  background: lightskyblue;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container-time.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container-time .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.container-time .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container-time {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container-time.right {
+    left: 0%;
+  }
+
+  .container-time.left::after, 
+  .container-time.right::after {
+    left: 82px;
+  }
+
+  .container-time.left::before,
+  .container-time.right::before {
+    left: 100px;
+    border-color: transparent #000000 transparent transparent;
+  }
+
+  .container-time.left .date,
+  .container-time.right .date {
+    right: auto;
+    left: 35px;
+  }
+
+  .container-time.left .icon,
+  .container-time.right .icon {
+    right: auto;
+    left: 46px;
+  }
+
+  .container-time.left .content,
+  .container-time.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+
+/* responsive timeline */
+@media (max-width: 767px) {
+  .timeline::after {
+  left: 20px;
+  margin-left: 0;
+  }
+  
+  .container-time {
+  width: 100%;
+  padding: 15px;
+  }
+  
+  .container-time::before,
+  .container-time::after {
+  display: none;
+  }
+  
+  .container-time .date,
+  .container-time .date1,
+  .container-time .date2,
+  .container-time .date3 {
+  position: relative;
+  display: block;
+  top: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b5ef06;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  }
+  
+  .container-time.left .date,
+  .container-time.left .date1,
+  .container-time.left .date2,
+  .container-time.left .date3 {
+  right: auto;
+  left: 0;
+  }
+}
+  /* fin timeline */
