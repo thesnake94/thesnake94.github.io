@@ -9,6 +9,14 @@ window.onscroll = function () {
 	}
 };
 
+// navbar qui se ferme sur tel
+function closeNav() {
+	var navBar = document.getElementById('navbarResponsive');
+	if (navBar.classList.contains('show')) {
+		navBar.classList.remove('show');
+	}
+}
+
 // bouton retour vers le haut
 window.addEventListener('scroll', function () {
 	const scrollPosition = window.scrollY;
