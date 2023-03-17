@@ -8,3 +8,14 @@ window.onscroll = function () {
 		}
 	}
 };
+
+// bouton retour vers le haut
+window.addEventListener('scroll', function () {
+	const scrollPosition = window.scrollY;
+	const scrollToTop = document.querySelector('.scroll-to-top');
+	if (scrollPosition > 20) {
+		scrollToTop.classList.add('show');
+	} else {
+		scrollToTop.classList.remove('show');
+	}
+});

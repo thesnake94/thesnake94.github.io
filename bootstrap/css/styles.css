@@ -7,7 +7,6 @@ header{
 }
 
 
-@charset "UTF-8";
 
 :root {
   --bs-blue: #0d6efd;
@@ -381,7 +380,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -11515,39 +11514,32 @@ html {
 
 
 /* Bouton retour en haut */
-.btn_retour {
-  scroll-behavior: smooth;
-  height: 46px;
-  width: 46px;
-  border-radius: 50%;
-  display: flex;
-  background: lightblue;
-  justify-content: center;
-  align-items: center;
+.scroll-to-top {
   position: fixed;
+  bottom: 20px;
   right: 20px;
-  bottom: 20px;
-  cursor: pointer;
-}
-
-
-.btn_retour2 {
-  scroll-behavior: smooth;
-  height: 46px;
-  width: 46px;
+  background-color: black;
+  color: lightblue;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
-  background: lightblue;
-  justify-content: center;
   align-items: center;
-  position: fixed;
-  left: 40px;
-  bottom: 20px;
-  cursor: pointer;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.icone {
-  width: 50px;
+.scroll-to-top__icon {
+  font-size: 25px;
+  top: 13%;
+  text-align: center;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
 }
 /* fin Bouton retour en haut */
 
@@ -11678,3 +11670,8 @@ nav {
   transform: translateY(0);
 }
 /*fin animation h1 */
+
+
+
+
+
