@@ -11432,9 +11432,6 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
-  /* background-image: url(/assets/img/cybersecurity-bg_1920.jpg);
-  background-repeat: none;
-  background-size: 100%; */
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11552,6 +11549,8 @@ html {
 .icone {
   width: 50px;
 }
+/* fin Bouton retour en haut */
+
 
 
 /* navbar qui se réduit */
@@ -11619,7 +11618,6 @@ nav {
 }
 
 
-
 .logo_social{
   height: 80%;
 }
@@ -11633,5 +11631,46 @@ nav {
   color: blue; /* rend le texte bleu au survol */
   text-shadow: none; /* supprime le flou au survol */
 }
+/*fin contact*/
 
 
+/* animation h1 */
+.masthead-heading {
+  animation: colorChange 2s infinite, floatEffect 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: lightskyblue;
+  }
+  50% {
+    color: azure;
+  }
+  75% {
+    color: lightskyblue;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.masthead-heading:hover {
+  animation: none;
+  transform: translateY(0);
+}
+/*fin animation h1 */
