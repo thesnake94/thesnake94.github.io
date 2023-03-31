@@ -2285,6 +2285,23 @@ html {
     font-size: 1.5rem;
   }
 }
+
+
+.portfolio-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+.portfolio-item {
+  overflow: hidden;
+  height: 250px; /* ou toute autre valeur que vous souhaitez */
+
+}
+
+
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
