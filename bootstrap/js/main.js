@@ -53,3 +53,16 @@ const observer = new IntersectionObserver(function (entries, observer) {
 containerTimes.forEach((containerTime) => {
 	observer.observe(containerTime);
 });
+
+// // Sélectionnez l'élément h2 et ajoutez-lui un gestionnaire d'événements click
+// document.getElementById('big-dayen').addEventListener('click', function () {
+// 	// Sélectionnez l'élément loader et ajoutez-lui une classe pour l'afficher
+// 	var loader = document.getElementById('loader');
+// 	loader.classList.add('loader');
+
+// 	// Attendez un certain temps avant de rediriger l'utilisateur
+// 	setTimeout(function () {
+// 		// Redirigez l'utilisateur vers la page souhaitée
+// 		window.location.href = '/bootstrap/index.html';
+// 	}, 2000); // Temps d'attente en millisecondes (2 secondes dans cet exemple)
+// });

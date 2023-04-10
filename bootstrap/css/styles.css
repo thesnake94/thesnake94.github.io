@@ -327,6 +327,12 @@ button:not(:disabled),
   font-weight: 300;
 }
 
+.lead1 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
